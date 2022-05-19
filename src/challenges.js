@@ -11,9 +11,9 @@ function compareTrue(num1, num2) {
 function calcArea(base, height) {
   // seu código aqui
 
-  const area = (base * height) / 2;
+  const areaCalculator = (base * height) / 2;
 
-  return area;
+  return areaCalculator;
 }
 
 // Desafio 3
@@ -28,8 +28,9 @@ function splitSentence(str) {
 // Desafio 4
 function concatName(arr) {
   // seu código aqui
+  const concating = `${arr[arr.length - 1]}, ${arr[0]}`;
 
-  return `${arr[arr.length - 1]}, ${arr[0]}`;
+  return concating;
 }
 
 // Desafio 5
@@ -73,6 +74,7 @@ function catAndMouse(mouse, cat1, cat2) {
 
   return 'os gatos trombam e o rato foge';
 }
+
 // Desafio 8
 function fizzBuzz(arr) {
   // seu código aqui
@@ -130,11 +132,22 @@ function decode(str) {
   return result;
 }
 
-
 // Desafio 10
-function techList() {
+function techList(arr, studant) {
   // seu código aqui
+
+  const result = [];
+  const sortedArr = arr.sort();
+
+  for (let i = 0; i < sortedArr.length; i += 1) {
+    result.push({
+      tech: arr[i],
+      name: studant,
+    });
+  }
+  return result <= 0 ? 'Vazio!' : result;
 }
+// console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'))
 
 module.exports = {
   calcArea,
