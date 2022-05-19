@@ -95,8 +95,7 @@ function fizzBuzz(arr) {
 // Desafio 9
 function encode(str) {
   // seu código aqui
-
-  const arrOfLetters = str.split('')
+  const arrOfLetters = str.split('');
 
 
   const changeLetters = arrOfLetters.map(value =>
@@ -110,12 +109,27 @@ function encode(str) {
   const result = changeLetters.join('').replace();
 
   return result;
+
 }
 
 function decode(str) {
   // seu código aqui
+  const arrOfLetters = str.split('');
 
+
+  const changeLetters = arrOfLetters.map(value =>
+    value === '1' ? 'a' : value &&
+    value === '2' ? 'e' : value &&
+    value === '3' ? 'i' : value &&
+    value === '4' ? 'o' : value &&
+    value === '5' ? 'u' : value
+  );
+
+  const result = changeLetters.join('').replace();
+
+  return result;
 }
+
 
 // Desafio 10
 function techList() {
