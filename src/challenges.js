@@ -29,7 +29,6 @@ function splitSentence(str) {
 function concatName(arr) {
   // seu código aqui
 
-
   return `${arr[arr.length - 1]}, ${arr[0]}`;
 }
 
@@ -45,15 +44,38 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-function highestCount() {
+function highestCount(arr) {
   // seu código aqui
+  const findMaxNumber = Math.max(...arr);
+  let count = 0;
+
+  for (let i = 0; i < arr.length; i += 1) {
+    if (arr[i] === findMaxNumber) {
+      count += 1;
+    }
+
+  }
+
+  return count;
+
 }
 
 // Desafio 7
-function catAndMouse() {
+function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
-}
+  const cat1FromMouse = Math.abs(cat1 - mouse);
+  const cat2FromMouse = Math.abs(cat2 - mouse);
 
+ 
+  if (cat1FromMouse > cat2FromMouse) {
+    return 'cat2';
+  }
+  if (cat1FromMouse < cat2FromMouse) {
+    return 'cat1';
+  }
+
+  return 'os gatos trombam e o rato foge';
+}
 // Desafio 8
 function fizzBuzz() {
   // seu código aqui

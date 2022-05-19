@@ -13,3 +13,4 @@ describe('4 - Crie uma função que use concatenação de strings', () => {
     expect(concatName(['captain', 'my', 'captain'])).toBe('captain, captain');
   });
 });
+
