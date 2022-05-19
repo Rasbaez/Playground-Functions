@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-expressions */
 // Desafio 1
 function compareTrue(num1, num2) {
   // seu código aqui
@@ -13,7 +14,6 @@ function calcArea(base, height) {
   const area = (base * height) / 2;
 
   return area;
-
 }
 
 // Desafio 3
@@ -53,11 +53,9 @@ function highestCount(arr) {
     if (arr[i] === findMaxNumber) {
       count += 1;
     }
-
   }
 
   return count;
-
 }
 
 // Desafio 7
@@ -66,7 +64,6 @@ function catAndMouse(mouse, cat1, cat2) {
   const cat1FromMouse = Math.abs(cat1 - mouse);
   const cat2FromMouse = Math.abs(cat2 - mouse);
 
- 
   if (cat1FromMouse > cat2FromMouse) {
     return 'cat2';
   }
@@ -77,17 +74,47 @@ function catAndMouse(mouse, cat1, cat2) {
   return 'os gatos trombam e o rato foge';
 }
 // Desafio 8
-function fizzBuzz() {
+function fizzBuzz(arr) {
   // seu código aqui
+  const valueConverter = arr.map((value) => {
+    if (value % 3 === 0 && value % 5 === 0) {
+      return 'fizzBuzz';
+    }
+    if (value % 5 === 0) {
+      return 'buzz';
+    }
+    if (value % 3 === 0) {
+      return 'fizz';
+    }
+    return 'bug!';
+  });
+
+  return valueConverter;
 }
 
 // Desafio 9
-function encode() {
+function encode(str) {
   // seu código aqui
+
+  const arrOfLetters = str.split('')
+
+
+  const changeLetters = arrOfLetters.map(value =>
+    value === 'a' ? 1 : value &&
+    value === 'e' ? 2 : value &&
+    value === 'i' ? 3 : value &&
+    value === 'o' ? 4 : value &&
+    value === 'u' ? 5 : value
+  );
+
+  const result = changeLetters.join('').replace();
+
+  return result;
 }
 
-function decode() {
+function decode(str) {
   // seu código aqui
+
 }
 
 // Desafio 10
