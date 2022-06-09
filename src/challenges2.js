@@ -42,11 +42,8 @@ function hydrate(str) {
   const arrString = str.match(extractedNumbers);
   const arrOfNumbers = arrString.map(Number);
   const total = arrOfNumbers.reduce((acc, curr) => acc + curr, 0);
-
-  if (total > 1) {
-    return `${total} copos de água`;
-  }
-  return `${total} copo de água`;
+  const result = total > 1 ? `${total} copos de água` : `${total} copo de água`;
+  return result;
 }
 
 module.exports = {
