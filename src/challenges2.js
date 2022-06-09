@@ -36,8 +36,17 @@ function triangleCheck(lineA, lineB, lineC) {
 }
 
 // Desafio 13
-function hydrate() {
+function hydrate(str) {
   // seu código aqui
+  const extractedNumbers = /\d+/g;
+  const arrString = str.match(extractedNumbers);
+  const arrOfNumbers = arrString.map(Number);
+  const total = arrOfNumbers.reduce((acc, curr) => acc + curr, 0);
+
+  if (total > 1) {
+    return `${total} copos de água`;
+  }
+  return `${total} copo de água`;
 }
 
 module.exports = {
