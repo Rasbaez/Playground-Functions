@@ -46,8 +46,5 @@ function hydrate(str) {
   return result;
 }
 
-module.exports = {
-  generatePhoneNumber,
-  hydrate,
   triangleCheck,
 };
