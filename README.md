@@ -1,4 +1,4 @@
-No Projeto PlayGround Functions, aprendemos a escrever funções JavaScript, em suas mais váriadas formas deultilização, ultilizando operadores lógicos, calculando valores, dentre os demais usos básicos da linguagem.
+No Projeto PlayGround Functions, aprendemos a escrever funções JavaScript, em suas mais váriadas formas de ultilização, usando operadores lógicos, calculando valores, dentre os demais usos básicos da linguagem.
 
 Para atingir aprovação nos foi necesário atingir 8% dos requisitos!!
 
